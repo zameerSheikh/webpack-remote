@@ -45,7 +45,7 @@ module.exports = {
       filename: "remoteEntry.js",
       remotes: {},
       exposes: {
-        "./Counter": "./src/Counter.jsx"
+        "./Counter": "./Counter.jsx"
       },
       shared: {
         ...deps,
