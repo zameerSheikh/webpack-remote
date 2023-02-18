@@ -3,9 +3,7 @@ const ModuleFederationPlugin = require("webpack/lib/container/ModuleFederationPl
 
 const deps = require("./package.json").dependencies;
 module.exports = {
-  output: {
-    publicPath: "./",
-  },
+  output: {},
 
   resolve: {
     extensions: [".tsx", ".ts", ".jsx", ".js", ".json"],
@@ -45,7 +43,9 @@ module.exports = {
       filename: "remoteEntry.js",
       remotes: {},
       exposes: {
-        "./Counter": "./src/Counter.jsx"
+        "./Header": "./src/Header.jsx",
+        "./Footer": "./src/Footer.jsx",
+        "./Sidebar": "./src/Sidebar.jsx"
       },
       shared: {
         ...deps,
