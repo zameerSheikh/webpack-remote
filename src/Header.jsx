@@ -7,7 +7,7 @@ export default function Counter() {
     return (
         <div className="header">
             <div className="header-menu">
-                <div className="title">Fission <span>Devs</span></div>
+                <div className="title">Fission <span>Devs</span> India</div>
                 <ul>
                 <li><a href="#"><i className="fas fa-search"></i></a></li>
                 <li><a href="#"><i className="fas fa-bell"></i></a></li>
