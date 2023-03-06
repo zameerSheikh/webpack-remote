@@ -4,6 +4,6 @@ import './Footer.css';
 export default function Counter() {
 
     return (
-        <footer className="footer">&copy; Copyright 2023 Fission🔯Labs India.</footer>
+        <footer className="footer">&copy; Copyright 2023 Fission🔯Labs.</footer>
     )
 }
