@@ -5,12 +5,15 @@ import Sidebar from "./Sidebar";
 import Footer from "./Footer";
 
 import "./index.scss";
+import "./App.css";
 
 const App = () => (
-  <div>
-    <Header />
+  <div className="container">
     <Sidebar />
-    <Footer />
+    <div className="main">
+      <Header />
+      <Footer />
+    </div>
   </div>
 );
 ReactDOM.render(<App />, document.getElementById("app"));
