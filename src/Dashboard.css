@@ -35,6 +35,7 @@ h3 {
 }
 table {
     padding: 10px;
+    margin-left: 1rem;
 }
 th,
 td {
