@@ -3,6 +3,7 @@ import ReactDOM from "react-dom";
 import Header from "./Header";
 import Sidebar from "./Sidebar";
 import Footer from "./Footer";
+import Dashboard from "./Dashboard";
 
 import "./index.scss";
 import "./App.css";
@@ -12,6 +13,7 @@ const App = () => (
     <Sidebar />
     <div className="main">
       <Header />
+      <Dashboard />
       <Footer />
     </div>
   </div>
