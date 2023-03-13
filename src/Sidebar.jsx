@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { NavLink } from "react-router-dom"
 import './Sidebar.css';
 
 export default function Sidebar() {
@@ -11,33 +12,29 @@ export default function Sidebar() {
                     <i className={collapse ? 'fas fa-bars' : 'fas fa-close'}></i>
                 </button>
         <li className="item">
-          <a href="#" className="menu-btn">
-            <i className="fas fa-desktop"></i><span>Dashboard</span>
-          </a>
+            <NavLink to="/" className="menu-btn" style={({ isActive }) => ({ color: isActive ? "limegreen" : "white" })}>
+              <i className="fas fa-desktop"></i><span>Dashboard</span>
+            </NavLink>
         </li>
         <li className="item" id="profile">
-          <a href="#profile" className="menu-btn">
-            <i className="fas fa-user-circle"></i><span>Profile <i className="fas fa-chevron-down drop-down"></i></span>
-          </a>
-          <div className="sub-menu">
-            <a href="#"><i className="fas fa-image"></i><span>Picture</span></a>
-            <a href="#"><i className="fas fa-address-card"></i><span>Info</span></a>
-          </div>
+          <NavLink to="/profile" className="menu-btn" style={({ isActive }) => ({ color: isActive ? "limegreen" : "white" })}>
+            <i className="fas fa-user-circle"></i><span>Profile</span>
+          </NavLink>
         </li>
         <li className="item" id="messages">
-          <a href="#messages" className="menu-btn">
+          <NavLink to="/messages" className="menu-btn" style={({ isActive }) => ({ color: isActive ? "limegreen" : "white" })}>
             <i className="fas fa-envelope"></i><span>Messages</span>
-          </a>
+          </NavLink>
         </li>
         <li className="item" id="settings">
-          <a href="#settings" className="menu-btn">
+          <NavLink to="/settings" className="menu-btn" style={({ isActive }) => ({ color: isActive ? "limegreen" : "white" })}>
             <i className="fas fa-cog"></i><span>Settings</span>
-          </a>
+          </NavLink>
         </li>
         <li className="item">
-          <a href="#" className="menu-btn">
+          <NavLink to="/about" className="menu-btn" style={({ isActive }) => ({ color: isActive ? "limegreen" : "white" })}>
             <i className="fas fa-info-circle"></i><span>About</span>
-          </a>
+          </NavLink>
         </li>
       </div>
     </div>
