@@ -16,8 +16,8 @@ export default function Sidebar() {
               <i className="fas fa-desktop"></i><span>Dashboard</span>
             </NavLink>
         </li>
-        <li className="item" id="profile">
-          <NavLink to="/profile" className="menu-btn" style={({ isActive }) => ({ color: isActive ? "limegreen" : "white" })}>
+        <li className="item" id="employees">
+          <NavLink to="/employees" className="menu-btn" style={({ isActive }) => ({ color: isActive ? "limegreen" : "white" })}>
             <i className="fas fa-user-circle"></i><span>Employees</span>
           </NavLink>
         </li>
