@@ -18,7 +18,7 @@ export default function Sidebar() {
         </li>
         <li className="item" id="profile">
           <NavLink to="/profile" className="menu-btn" style={({ isActive }) => ({ color: isActive ? "limegreen" : "white" })}>
-            <i className="fas fa-user-circle"></i><span>Profile</span>
+            <i className="fas fa-user-circle"></i><span>Employees</span>
           </NavLink>
         </li>
         <li className="item" id="messages">
