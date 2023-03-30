@@ -7,7 +7,7 @@ import Footer from "./Footer";
 import Dashboard from "./Dashboard";
 
 import "./index.scss";
-import "./App.css";
+import "./App.scss";
 
 const App = () => (
   <BrowserRouter>

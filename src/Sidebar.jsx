@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom"
-import './Sidebar.css';
+import './Sidebar.scss';
 
 export default function Sidebar() {
     const [collapse, setCollapse] = useState(false);
@@ -8,7 +8,7 @@ export default function Sidebar() {
         <div className={`wrapper ${collapse ? 'collapse' : ''}`}>
         <div className="sidebar">
       <div className="sidebar-menu">
-                <button className="sidebar-btn" onClick={() => setCollapse(c => !c)}>
+                <button className="sidebar-toggle" onClick={() => setCollapse(c => !c)}>
                     <i className={collapse ? 'fas fa-bars' : 'fas fa-close'}></i>
                 </button>
         <li className="item">
